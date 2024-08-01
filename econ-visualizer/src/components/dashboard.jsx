@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const FREDChart = ({ seriesId, color }) => {
+FREDChart.propTypes = {
+  seriesId: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
