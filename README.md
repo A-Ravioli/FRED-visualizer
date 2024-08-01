@@ -13,35 +13,40 @@ This project is a dashboard that displays economic data from the Federal Reserve
 
 - Node.js and npm (for React frontend)
 - Python 3.7+ (for Flask backend)
-- FRED API key (obtain from https://fred.stlouisfed.org/docs/api/api_key.html)
+- FRED API key (obtain from <https://fred.stlouisfed.org/docs/api/api_key.html>)
 
 ## Setup
 
 ### Backend Setup
 
 1. Navigate to the backend directory:
-   ```
+
+   ```bash
    cd backend
    ```
 
 2. Create a virtual environment and activate it:
-   ```
+
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
 3. Install the required Python packages:
-   ```
+
+   ```bash
    pip install flask flask-cors fredapi python-dotenv
    ```
 
 4. Create a `.env` file in the backend directory and add your FRED API key:
-   ```
+
+   ```bash
    FRED_API_KEY=your_api_key_here
    ```
 
 5. Run the Flask server:
-   ```
+
+   ```bash
    python app.py
    ```
 
@@ -50,17 +55,20 @@ The backend should now be running on `http://localhost:5000`.
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
-   ```
+
+   ```bash
    cd frontend
    ```
 
 2. Install the required npm packages:
-   ```
+
+   ```bash
    npm install
    ```
 
 3. Start the React development server:
-   ```
+
+   ```bash
    npm start
    ```
 
